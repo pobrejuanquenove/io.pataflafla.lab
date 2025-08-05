@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Image from 'next/image';
 import { SimplePokemon } from './interfaces/simple';
 import {
@@ -10,7 +9,7 @@ import {
   CardContent,
   CardFooter,
 } from '../ui/card';
-import { Icon, InfoIcon } from 'lucide-react';
+import { InfoIcon } from 'lucide-react';
 //import { IoHeartOutline } from 'react-icons/io5';
 
 interface Props {

@@ -6,7 +6,7 @@ interface Props {
 }
 export  const FlagsGrid = ({flags}:Props) => {
   return (
-      <div className="flex flex-wrap gap-6 p-6 items-stretch justify-center">
+      <div className="flex flex-wrap gap-5 items-stretch justify-center">
         {flags.map((flag:SimpleFlag) => (
         // <Image
         //   key={pokemon.id}

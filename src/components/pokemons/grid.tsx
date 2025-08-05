@@ -6,7 +6,7 @@ interface Props {
 }
 export  const PokemonsGrid = ({pokemons}:Props) => {
   return (
-      <div className="flex flex-wrap gap-6 p-6 items-stretch justify-center">
+      <div className="flex flex-wrap items-stretch gap-5 justify-center">
         {pokemons.map((pokemon:SimplePokemon) => (
         // <Image
         //   key={pokemon.id}
