@@ -1,26 +1,12 @@
-import { FlagsGrid, SimpleFlag } from '@/components/flags/';
 import Link from 'next/link';
+import { FavoriteGrid } from '@/components/flags/client/FavoriteGrid';
 
-const getFlags = async (): Promise<SimpleFlag[]> => {
-  const data = await fetch(
-    `https://restcountries.com/v3.1/all?fields=name,flags`,
-  ).then((res) => res.json());
-  return data;
-};
-export default async function FlagPage() {
-  const flags = await getFlags();
+export default async function FavoritePage() {
   return (
     <div className="flex flex-col gap-5 p-7">
       <div className="bg-muted/50 rounded-xl p-7 grid">
         <h1 className="block text-2xl mb-3">
-          ISR using{' '}
-          <Link
-            className="text-blue-300 hover:underline"
-            href={'https://restcountries.com'}
-            target="_blank"
-          >
-            REST Countries API
-          </Link>
+          Working with <Link href={'https://redux-toolkit.js.org'} target='_blank'>Redux Toolkit</Link>
         </h1>
         <p className="block">
           This example fetches the first 150 entries from the API result at{' '}
@@ -44,7 +30,7 @@ export default async function FlagPage() {
           </ul>
         </div>
       </div>
-      <FlagsGrid flags={flags} />
+      <FavoriteGrid />
     </div>
   );
 }

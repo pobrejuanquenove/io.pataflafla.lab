@@ -53,7 +53,7 @@ export default async function PokemonsPage() {
                 /pokemons<span className="font-light ml-2 text-xs">(current)</span>
               </span>
             </li>
-            <li>/pokemons/{`{name}`}</li>
+            <li>/pokemon/{`{name}`}</li>
           </ul>
         </div>
       </div>
