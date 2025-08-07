@@ -4,7 +4,7 @@ import { useAppDispatch, useAppSelector } from '@/store';
 import { toggleFavorites } from '@/store/flags/favorites';
 import { Button } from '@/components/ui/button';
 import { SimpleFlag } from '../interfaces/simple';
-import { Heart, HeartFill } from 'geist-icons';
+import { Heart, HeartFill } from '@geist-ui/icons';
 
 export const FlagToggle = ({ flags, name }: SimpleFlag) => {
   const { common } = name;
